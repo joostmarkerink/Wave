@@ -27,7 +27,7 @@ struct Wave{
     sampleRate=sr;
     if(num>0){
       shape=TABLE;
-      setTable(num,v);
+      setTable(v,num);
     }else{
       shape=0;
     }
