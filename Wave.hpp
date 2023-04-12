@@ -23,7 +23,8 @@ struct Wave{
   static const int SQUARE   = 2;
   static const int TABLE    = 3;
   int sampleRate;
-  Wave(sampleRate=48000,const double *v=0,unsigned num=0){
+  Wave(int sr=48000,const double *v=0,unsigned num=0){
+    sampleRate=sr;
     if(num>0){
       shape=TABLE;
       setTable(num,v);
